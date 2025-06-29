@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body{
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+}
+.navbar, .navbar-nav, .navbar-brand, .nav-link {
+    font-family: 'Poppins', 'Kanit', sans-serif !important;
+}
+
+.navbar {
+    background: rgba(34, 34, 59, 0.85) !important;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 24px rgba(34,34,59,0.08);
+    border-bottom: 1.5px solid rgba(255,255,255,0.08);
+}
+
+.navbar-brand h5 {
+    color: #f2e9e4 !important;
+    font-family: 'Barriecito', cursive;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+}
+
+.navbar-nav .nav-link {
+    color: #f2e9e4 !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin: 0 0.5rem;
+    transition: color 0.2s, text-shadow 0.2s;
+    text-shadow: 0 2px 8px rgba(34,34,59,0.10);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link:hover {
+    color: #9f86c0 !important;
+    text-shadow: 0 2px 12px #9f86c055;
+}
+
+.navbar-toggler {
+    color: #f2e9e4 !important;
+    border: 1.5px solid #f2e9e4 !important;
+    background: rgba(34,34,59,0.7) !important;
+}
+
+.nav h5{
+    color: black;
+    padding-right: 120px;
+    padding-top: 5px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 500;
+}
+.nav a{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+.nav{
+    background-color: black;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    backdrop-filter: blur(35px);
+}
+/* home */
+#home{
+    margin-top: 40px;
+}
+.homepage{
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    padding: 80px;
+}
+.title{
+    font-weight: 600;
+}
+.homepage img{
+    padding-left: 240px;
+}
+.title_color{
+    color: #b558c4;
+    font-style: oblique;
+    font-size: 45px;
+}
+
+.text h1{
+    font-size: 50px;
+}
+.text i{
+    margin: 2%;
+}
+.text a{
+    color: black;
+}
+
+@media (max-width: 768px) {
+    .homepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px;
+    }
+
+    .info img {
+        width: 60vw !important;
+        max-width: 220px !important;
+        min-width: 120px;
+        height: auto !important;
+        border-radius: 16px;
+        margin-bottom: 18px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+        object-fit: cover;
+    }
+
+    .para {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* About */
+#about{
+    align-content: center;
+    margin-bottom: 30px;
+}
+#about h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Barriecito", system-ui;
+    font-weight: 700;
+    text-decoration: underline rgb(115, 115, 203);
+} 
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+}
+.para{
+    width: 70%;
+    padding-left: 100px;
+    align-content: center;
+}
+.para h1{
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* skills */
+#skills h1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: "Barriecito", system-ui;
+    font-weight: 500;
+    text-decoration: underline rgb(115, 115, 203);
+}
+.bars {
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    background: #f8f9fa;
+    border-radius: 16px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+}
+.bars h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+.progress {
+    background: #e0e0e0;
+    border-radius: 30px;
+    margin-bottom: 1.2rem;
+    height: 28px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    overflow: hidden;
+    position: relative;
+}
+.progress-bar {
+    background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 30px;
+    height: 100%;
+    box-shadow: 0 2px 8px rgba(108, 99, 255, 0.10);
+    transition: width 1.2s cubic-bezier(.77,0,.18,1);
+    letter-spacing: 1px;
+}
+.progress-bar::after {
+    content: '';
+}
+
+/* certificates */
+#certificates {
+    text-align: center;
+    padding: 40px 0;
+}
+
+#certificates h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 500;
+    text-decoration: underline rgb(115, 115, 203);
+}
+
+.certificate {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.certificate a {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.certificate a:hover {
+    text-decoration: underline;
+}
+.certificate button a{
+    color: white;
+    align-content: center;
+}
+
+.certificate button{
+    height: 40px;
+    margin-bottom: 20px;
+
+} 
+.text-center{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.text-center:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background: transparent;
+    box-shadow: 0 0 20px 5px #00fffc;
+}
+
+
+/* experience */
+#experiences{
+    justify-self: center;
+}
+.experience {
+    max-width: 800px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#experiences h2 {
+    color: #333;
+    justify-self: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 600;
+    text-decoration: underline rgb(115, 115, 203);
+    
+}
+.experience h3 {
+    color: #555;
+    margin-bottom: 5px;
+}
+.experience p {
+    color: #666;
+    line-height: 1.6;
+}
+.highlight {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* projects */
+#projects {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+#projects h2{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 500;
+    text-decoration: underline rgb(115, 115, 203);
+}
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.project {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+.project h3 {
+    margin-bottom: 10px;
+}
+.project p {
+    font-size: 14px;
+    color: #666;
+}
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.project a:hover{
+    /* background: #0056b3; */
+    color: white;
+}
+.project img{
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+.project img:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+.fproject{
+    display: flex;
+    flex-direction: row;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.fpara{
+   justify-self: center;
+}
+.fpara a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.fproject img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.fproject img:hover {
+    transform: translateY(-6px);
+}
+
+/* resume */
+#resumes {
+    padding: 50px;
+    background-color: white;
+    text-align: center;
+}
+#resumes h2{
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 500;
+    text-decoration: underline rgb(115, 115, 203);
+}
+
+/* contact */
+#contact{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#contact form{
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+#contact h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 500;
+    text-decoration: underline rgb(115, 115, 203);
+}
+
+/* footer */
+#footer{
+    background-color: black;
+    text-align: center;
+    height: 200px;
+    padding-top: 40px;
+    color: white;
+}
+#footer a{
+    color: whitesmoke;
+    padding-right: 18px;
+}
+
+/* #about, #skills, #certificates, #experiences, #projects, #resumes, #contact {
+    animation: appear 5s linear;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+
+
+#about, #skills, #certificates, #experiences, #projects, #resumes, #contact {
+    animation: appear 5s linear;
+    animation-timeline: view();
+    animation-range:entry 30%;
+}
+
+#education {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.education-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 50px;
+    font-family: "Barriecito", system-ui;
+    font-weight: 500;
+    text-decoration: underline rgb(115, 115, 203);
+    text-align: center;
+}
+
+.education-item {
+  background-color: #fff;
+  padding: 20px 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.education-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.education-item p {
+  margin: 0;
+  color: #555;
+  font-size: 16px;
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+
+
+
